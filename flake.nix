@@ -16,10 +16,13 @@
     bobthefish.url = "github:oh-my-fish/theme-bobthefish";
     bobthefish.flake = false;
 
+    foreign-env.url = "github:oh-my-fish/plugin-foreign-env";
+    foreign-env.flake = false;
+
     firefox-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
   };
 
-  outputs = inputs@{ self, nixpkgs, nix-darwin, home-manager, stylix, helix, bobthefish, firefox-addons }:
+  outputs = inputs@{ self, nixpkgs, nix-darwin, home-manager, stylix, helix, bobthefish, foreign-env, firefox-addons }:
   let
     configurationRevision = self.rev or self.dirtyRev or null;
   in

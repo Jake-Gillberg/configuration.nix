@@ -1,10 +1,13 @@
-{ bobthefish }: {
+{ bobthefish, foreign-env }: {
   programs.fish = {
     enable = true;
 
     plugins = [
       { name = "bobthefish";
         src = bobthefish;
+      }
+      { name = "foreign-env";
+        src = foreign-env;
       }
     ];
 
@@ -21,6 +24,11 @@
       set -g theme_nerd_fonts yes
       set -g theme_color_scheme terminal2
     '';
+
+    functions = {
+      aws-codeartifact = "fenv 'source ~/dotfiles/bootstrap.sh && aws-codeartifact'";
+      ll = "ls -la $argv";
+    };
 
   };
 

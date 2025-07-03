@@ -27,7 +27,8 @@
       DisableTelemetry = true;
       DNSOverHTTPS = {
         Enabled = true;
-        Fallback = false;
+        ProviderURL = "https://dns.quad9.net/dns-query";
+        Fallback = true;
       };
       EnableTrackingProtection = {
         Value = true;

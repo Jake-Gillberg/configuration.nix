@@ -155,6 +155,22 @@
         "type": "github"
       }
     },
+    "foreign-env": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1692819433,
+        "narHash": "sha256-4+k5rSoxkTtYFh/lEjhRkVYa2S4KEzJ/IJbyJl+rJjQ=",
+        "owner": "oh-my-fish",
+        "repo": "plugin-foreign-env",
+        "rev": "7f0cf099ae1e1e4ab38f46350ed6757d54471de7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oh-my-fish",
+        "repo": "plugin-foreign-env",
+        "type": "github"
+      }
+    },
     "fromYaml": {
       "flake": false,
       "locked": {
@@ -394,6 +410,7 @@
       "inputs": {
         "bobthefish": "bobthefish",
         "firefox-addons": "firefox-addons",
+        "foreign-env": "foreign-env",
         "helix": "helix",
         "home-manager": "home-manager",
         "nix-darwin": "nix-darwin",
