@@ -10,4 +10,5 @@ lib.mkMerge [
   (import ./helix.nix)
   (import ./git.nix)
   (import ./direnv.nix)
+  (import ./language-servers.nix { inherit pkgs; })
 ]
