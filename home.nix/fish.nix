@@ -15,6 +15,8 @@
     };
 
     interactiveShellInit = ''
+      fish_vi_key_bindings
+      
       # bobthefish
       set -g theme_nerd_fonts yes
       set -g theme_color_scheme terminal2
