@@ -21,6 +21,7 @@
 
   users.users.jgillberg = {
     home = /Users/jgillberg;
+    shell = pkgs.bash;
   };
 
   home-manager = {
