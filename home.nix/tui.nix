@@ -5,7 +5,7 @@ lib.mkMerge [
       pkgs.gnupg
     ];
   }
-  (import ./fish.nix { bobthefish = inputs.bobthefish; })
+  (import ./fish.nix { inherit (inputs) bobthefish; })
   (import ./helix.nix)
   (import ./git.nix)
 ]
