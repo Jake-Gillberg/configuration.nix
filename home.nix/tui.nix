@@ -3,6 +3,7 @@ lib.mkMerge [
   { home.packages = [
       pkgs.unzip
       pkgs.gnupg
+      pkgs.git-credential-manager
     ];
   }
   (import ./fish.nix { inherit (inputs) bobthefish; })
