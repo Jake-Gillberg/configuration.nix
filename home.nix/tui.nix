@@ -1,9 +1,9 @@
 { pkgs, lib, inputs, ... }:
 lib.mkMerge [
   { home.packages = [
-      pkgs.unzip
       pkgs.gnupg
-      pkgs.git-credential-manager
+      pkgs.openssh
+      pkgs.unzip
     ];
   }
   (import ./fish.nix { inherit (inputs) bobthefish; })
